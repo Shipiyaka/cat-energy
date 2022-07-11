@@ -26,20 +26,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script defer src="static/js/main.js"></script> -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9AeKW6jbCyHENt77mOeNbngqTslIwbhk"></script> -->
+    <script defer src="static/js/main.js"></script>
   </head>
 
   <body>
     <header class="header">
       <div class="container header-container">
-        <div class="logo">
+        <a href="" class="logo">
           <img
             src="static/images/logo-desktop.svg"
             alt="Cat energy logo"
             class="logo-img"
           />
-        </div>
+        </a>
 
         <nav class="nav">
           <ul class="nav-ul list-reset">
@@ -220,48 +220,30 @@
         </div>
       </section>
 
-      <section id="hero" class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <div class="hero-banner">
-              <div class="hero-banner-container">
-                <h1 class="hero-title">Functional food for cats</h1>
-                <p class="hero-subtitle">
-                  Did you take care of&nbsp;yourself? Take care of&nbsp;the cat!
-                </p>
-                <button class="hero-btn btn btn-reset">
-                  <span class="hero-btn-text btn-text white"
-                    >Individual plan</span
-                  >
-                </button>
-              </div>
-            </div>
-            <div class="hero-banner-img">
-              <img
-                src="static/images/hero-can.svg"
-                alt="Banner image"
-                class="hero-img"
-              />
-            </div>
+      <section class="live-example">
+        <div class="live-example-title-container">
+          <div class="container">
+            <h2 class="live-example-site-title site-title">Live example</h2>
           </div>
         </div>
-      </section>
-
-      <section class="live-example">
         <div class="container">
-          <h2 class="site-title">Live example</h2>
           <div class="live-example-content">
             <div class="live-example-banner">
               <div class="live-example-banner-container">
-                <p class="live-example-subtitle"></p>
+                <p class="live-example-subtitle">
+                  Boris lost 5&nbsp;kg in&nbsp;2&nbsp;months by&nbsp;simply
+                  replacing his regular food on&nbsp;Cat Energy Slim. Excellent
+                  result without exhausting workouts! However, he&nbsp;did not
+                  change his habits and still sleeps 16&nbsp;hours a&nbsp;day.
+                </p>
                 <div class="live-example-row">
-                  <div class="achievement">
-                    <p class="achievement-title">5 kg</p>
-                    <p class="achievement-subtitle">Weight loss</p>
+                  <div class="live-example-column">
+                    <p class="live-example-column-title">5 kg</p>
+                    <p class="live-example-column-subtitle">Weight loss</p>
                   </div>
-                  <div class="achievement">
-                    <p class="achievement-title">60 days</p>
-                    <p class="achievement-subtitle">Time spent</p>
+                  <div class="live-example-column">
+                    <p class="live-example-column-title">60 days</p>
+                    <p class="live-example-column-subtitle">Time spent</p>
                   </div>
                 </div>
                 <div class="live-example-row">
@@ -270,77 +252,94 @@
                 </div>
               </div>
             </div>
+            <div class="live-example-banner-img">
+              <div id="comparison" class="slider-item">
+                <figure class="compare-item">
+                  <div id="divisor"></div>
+                </figure>
+
+                <div class="slider-container">
+                  <p class="slider-text">Before</p>
+
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="50"
+                    autocomplete="off"
+                    class="slider"
+                    id="slider"
+                    oninput="moveDivisor()"
+                  />
+                  <p class="slider-text">After</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- <footer id="footer" class="footer">
+      <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sfr!4v1657535077358!5m2!1sru!2sfr"
+          width="1440"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <footer id="footer" class="footer">
         <div class="footer-container container">
-          <div class="footer-columns">
-            <div class="footer-column">
-              <div class="logo">
-                <img
-                  src="static/images/logo1.svg"
-                  alt="Discount on services logo"
-                  class="logo-img"
-                />
-                <div class="logo-text white">DiscountsOnServices</div>
-              </div>
-              <p class="subtitle">It's simple, fast and economical</p>
-            </div>
-            <div class="footer-column">
-              <h6 class="title">Subscriptions</h6>
-              <p class="subtitle">Netflix</p>
-              <p class="subtitle">YouTube Premium</p>
-              <p class="subtitle">Spotify</p>
-            </div>
-            <div class="footer-column">
-              <h6 class="title">Site navigation</h6>
-              <p class="subtitle">About</p>
-              <p class="subtitle">FAQ</p>
-              <p class="subtitle">Support</p>
-            </div>
-            <div class="footer-column">
-              <div class="nav-contact">
-                <div class="nav-contact-item">
-                  <img
-                    src="static/images/whatsapp-white.svg"
-                    alt="Visit WhatsApp"
-                    class="nav-contact-item-img"
-                  />
-                </div>
-                <div class="nav-contact-item">
-                  <img
-                    src="static/images/telegram-white.svg"
-                    alt="Visit Telegram"
-                    class="nav-contact-item-img"
-                  />
-                </div>
-              </div>
-              <div class="dropdown">
-                <button class="dropdown-btn btn-reset">
-                  <span class="dropdown-btn-text">Lang</span>
-                  <i class="fa-solid fa-chevron-down fa-2xs"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="#">English</a>
-                  <a href="#">Ukrainian</a>
-                  <a href="#">Russian</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <div class="footer-bottom">
-            <span class="subtitle">Privacy Policy</span>
+            <a href="" class="footer-link">
+              <img
+                src="static/images/footer-logo.svg"
+                class="footer-logo-ce"
+                alt=""
+              />
+            </a>
 
-            <small class="copyright"
-              >Copyright 2021 &copy;&nbsp; All Rights Reserved</small
-            >
-            <span class="subtitle">Developed by ....</span>
+            <div class="socials">
+              <a href="" class="footer-link">
+                <img
+                  src="static/images/icon_vk.svg"
+                  alt=""
+                  class="socials-img vk"
+                />
+              </a>
+              <a href="" class="footer-link">
+                <img
+                  src="static/images/icon_ig.svg"
+                  alt=""
+                  class="socials-img ig"
+                />
+              </a>
+              <a href="" class="footer-link">
+                <img
+                  src="static/images/icon_fb.svg"
+                  alt=""
+                  class="socials-img fb"
+                />
+              </a>
+            </div>
+            <span class="footer-logo"
+              ><a href="" class="footer-link logo-text-link link-reset"><p class="footer-logo-text">
+                HTML Academy
+              </p>
+              <a href="" class="footer-link">
+                <img
+                  src="static/images/footer-logo-html.svg"
+                  alt=""
+                  class="footer-logo-img"
+                />
+              </a>
+            </span>
           </div>
         </div>
-      </footer> -->
+      </footer>
     </main>
   </body>
 </html>

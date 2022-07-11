@@ -1,5 +1,5 @@
-$(document).ready(function () {
-  $(".push").click(function () {
-    $(this).next(".faq-second-row").slideToggle(200);
-  });
-});
+var divisor = document.getElementById("divisor"),
+  slider = document.getElementById("slider");
+function moveDivisor() {
+  divisor.style.width = slider.value + "%";
+}
