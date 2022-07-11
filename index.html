@@ -41,21 +41,59 @@
           />
         </a>
 
-        <nav class="nav">
-          <ul class="nav-ul list-reset">
+        <a href="" class="logo-img-mobile">
+          <img
+            src="static/images/logo-mobile.svg"
+            alt="Cat energy logo"
+            class="logo-img"
+          />
+        </a>
+
+        <a href="" class="logo-text-mobile">
+          <img
+            src="static/images/footer-logo.svg"
+            alt="Cat energy logo"
+            class="logo-img"
+          />
+        </a>
+
+        <div class="burger">
+          <input type="checkbox" id="check-burger" autocomplete="off" />
+          <label for="check-burger">
+            <span class="burger-span">
+              <div class="burger-line first"></div>
+              <div class="burger-line second"></div>
+              <div class="burger-line third"></div>
+              <div class="burger-line fourth"></div>
+            </span>
+          </label>
+          <ul class="nav-top list-reset">
             <li class="nav-ul-li">
-              <a href="#faq" class="nav-ul-li-a link-reset">Main page</a>
+              <a href="#hero" class="nav-ul-li-a link-reset">Main page</a>
             </li>
             <li class="nav-ul-li">
-              <a href="#about-us" class="nav-ul-li-a link-reset">Products</a>
+              <a href="#features" class="nav-ul-li-a link-reset">Products</a>
             </li>
             <li class="nav-ul-li">
-              <a href="#footer" class="nav-ul-li-a link-reset"
+              <a href="#live-example" class="nav-ul-li-a link-reset"
                 >Individual plan</a
               >
             </li>
           </ul>
-        </nav>
+        </div>
+        <ul class="nav-top list-reset">
+          <li class="nav-ul-li">
+            <a href="#hero" class="nav-ul-li-a link-reset">Main page</a>
+          </li>
+          <li class="nav-ul-li">
+            <a href="#features" class="nav-ul-li-a link-reset">Products</a>
+          </li>
+          <li class="nav-ul-li">
+            <a href="#live-example" class="nav-ul-li-a link-reset"
+              >Individual plan</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -69,6 +107,11 @@
                 <p class="hero-subtitle">
                   Did you take care of&nbsp;yourself? Take care of&nbsp;the cat!
                 </p>
+                <img
+                  src="static/images/hero-can.svg"
+                  alt="Banner image"
+                  class="hero-img hidden"
+                />
                 <button class="hero-btn btn btn-reset">
                   <span class="hero-btn-text btn-text white"
                     >Individual plan</span
@@ -87,7 +130,7 @@
         </div>
       </section>
 
-      <section class="features">
+      <section id="features" class="features">
         <div class="container">
           <div class="sect-content">
             <div class="sect-banner">
@@ -140,7 +183,7 @@
         </div>
       </section>
 
-      <section class="how-it-works">
+      <section id="how-it-works" class="how-it-works">
         <div class="container">
           <h2 class="site-title">How it works</h2>
           <div class="panel-content sect-content">
@@ -219,7 +262,7 @@
         </div>
       </section>
 
-      <section class="live-example">
+      <section id="live-example" class="live-example">
         <div class="live-example-title-container">
           <div class="container">
             <h2 class="live-example-site-title site-title">Live example</h2>
@@ -246,12 +289,11 @@
                       <p class="live-example-column-subtitle">Time spent</p>
                     </div>
                   </div>
-                  <div class="live-example-row right">
+                  <div class="live-example-row spec">
                     <p class="live-example-sign">Food costs:</p>
                     <p class="live-example-sign">100&euro;</p>
                   </div>
                 </div>
-                
               </div>
             </div>
             <div class="live-example-banner-img">
@@ -281,7 +323,7 @@
         </div>
       </section>
 
-      <section class="map">
+      <section id="map" class="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sfr!4v1657535077358!5m2!1sru!2sfr"
           width="1440"
@@ -296,7 +338,7 @@
       <footer id="footer" class="footer">
         <div class="footer-container container">
           <div class="footer-bottom">
-            <a href="" class="footer-link">
+            <a href=""">
               <img
                 src="static/images/footer-logo.svg"
                 class="footer-logo-ce"
@@ -327,10 +369,11 @@
                 />
               </a>
             </div>
-            <span class="footer-logo"
-              ><a href="" class="footer-link logo-text-link link-reset"><p class="footer-logo-text">
-                HTML Academy
-              </p>
+
+            <span class="footer-logo">
+              <a href="" class="footer-link logo-text-link link-reset">
+                <p class="footer-logo-text">HTML Academy</p>
+              </a>
               <a href="" class="footer-link">
                 <img
                   src="static/images/footer-logo-html.svg"
