@@ -15,3 +15,13 @@ export function isWebp() {
     document.documentElement.classList.add(className);
   });
 }
+
+// export function moveDivisor() {
+//   console.log(document.getElementById("divisor"));
+//   console.log(document.getElementById("slider"));
+//   var divisor = document.getElementById("divisor"),
+//     slider = document.getElementById("slider");
+//   console.log((divisor.style.width = slider.value + "%"));
+//   divisor.style.width = slider.value + "%";
+//   console.log("fghjkk");
+// }

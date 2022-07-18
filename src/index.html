@@ -3,15 +3,13 @@
   @@include('html/head.html',{ "title":"Cat energy" })
   <body>
     @@include('html/header.html',{})
-    <main>@@include('html/main-inner.html',{})</main>
+    <main>
+      @@include('html/hero.html', {}) @@include("html/features.html", {})
+      @@include("html/how-it-works.html", {})
+      @@include("html/live-example.html", {}) @@include('html/map.html',{})
+    </main>
     @@include('html/footer.html',{})
-    <script>
-      var divisor = document.getElementById("divisor"),
-        slider = document.getElementById("slider");
-      function moveDivisor() {
-        divisor.style.width = slider.value + "%";
-      }
-    </script>
+    <script src="files/divisor.js"></script>
     <script src="js/app.min.js"></script>
   </body>
 </html>
